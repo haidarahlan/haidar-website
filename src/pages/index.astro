@@ -1,11 +1,57 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import HeroCard from '../components/HeroCard.astro';
+import ProfileCard from '../components/ProfileCard.astro';
+import ProjectsCard from '../components/ProjectsCard.astro';
+import ExperienceCard from '../components/ExperienceCard.astro';
+import CertificatesCard from '../components/CertificatesCard.astro';
+import ContactCard from '../components/ContactCard.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<input type="checkbox" id="theme-toggle-cb" class="hidden" />
+
+	<main class="max-w-6xl mx-auto px-4 py-12 md:py-16">
+		<div class="fixed top-0 right-4 md:right-8 z-50 pt-0">
+			<div class="bg-[#181528]/80 dark:bg-black/60 backdrop-blur-xl border-x border-b border-white/10 px-6 py-3 rounded-b-[1.5rem] rounded-t-none flex items-center gap-6 shadow-2xl">
+				<label for="theme-toggle-cb" class="text-xl hover:scale-110 transition duration-200 cursor-pointer select-none">
+					<span class="sun-icon">☀️</span>
+					<span class="moon-icon">🌙</span>
+				</label>
+				<div class="w-8 h-8 rounded-full bg-yellow-500 overflow-hidden flex items-center justify-center text-lg border border-white/20 shadow-inner">
+					<img src="/image/my_avatar.png" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+			<!-- Row 1 -->
+			<HeroCard />
+			<ProfileCard />
+
+			<!-- Row 2 -->
+			<ProjectsCard />
+			<ExperienceCard />
+
+			<!-- Row 3 -->
+			<CertificatesCard />
+			<ContactCard />
+		</div>
+	</main>
 </Layout>
+
+<style>
+	.sun-icon {
+		display: none;
+	}
+	.moon-icon {
+		display: inline;
+	}
+
+	#theme-toggle-cb:checked ~ main .sun-icon {
+		display: inline;
+	}
+	#theme-toggle-cb:checked ~ main .moon-icon {
+		display: none;
+	}
+</style>

@@ -1,0 +1,56 @@
+---
+// src/components/ProfileCard.astro
+---
+
+<div class="bg-gradient-to-br from-[#ff5e62] to-[#8b5cf6] rounded-[2rem] p-8 flex flex-col justify-between text-white shadow-lg min-h-[420px] relative overflow-hidden">
+
+  <div class="flex flex-col items-start gap-2.5 z-10">
+    <div class="flex gap-2">
+      <span class="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-2xl text-xs md:text-sm font-medium">
+        Frontend Development
+      </span>
+      <span class="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-2xl text-xs md:text-sm font-medium">
+        Git
+      </span>
+    </div>
+    <span class="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-2xl text-xs md:text-sm font-medium self-start">
+      REST API
+    </span>
+  </div>
+
+
+  <div class="relative w-full flex items-end justify-center mt-6">
+    <div class="flex flex-col gap-3 z-20 absolute left-2 bottom-2">
+    
+      <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg p-2.5">
+        <img src="/logo/firebase.svg" alt="Firebase" class="w-full h-full object-contain" />
+      </div>
+
+      <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg p-2.5">
+        <img src="/logo/dart.svg" alt="Dart" class="w-full h-full object-contain" />
+      </div>
+     
+      <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg p-2.5 text-cyan-500 font-bold text-xs">
+        Flutter
+      </div>
+    </div>
+
+
+    <div class="relative z-10 flex flex-col items-center select-none translate-y-4 max-w-[160px]">
+      <img src="/image/avatar_skill.png" alt="Haidar Coding" class="w-full object-contain filter drop-shadow-md" />
+    </div>
+
+
+    <div class="flex flex-col gap-3 z-20 absolute right-2 bottom-2">
+      <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg p-2.5">
+        <img src="/logo/laravel.svg" alt="Laravel" class="w-full h-full object-contain" />
+      </div>
+      <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg p-2">
+        <img src="/logo/php.svg" alt="PHP" class="w-full h-full object-contain" />
+      </div>
+      <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg p-2.5">
+        <img src="/logo/javascript.svg" alt="JS" class="w-full h-full object-contain" />
+      </div>
+    </div>
+  </div>
+</div>

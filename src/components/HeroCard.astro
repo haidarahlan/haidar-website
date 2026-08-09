@@ -1,0 +1,37 @@
+---
+// src/components/HeroCard.astro
+---
+
+<div class="bg-gradient-to-br from-[#06b6d4] via-[#10b981] to-[#eab308] rounded-[2rem] p-8 md:p-10 flex flex-col justify-between text-white relative shadow-lg min-h-[340px] md:col-span-2">
+  <div class="flex items-start justify-between w-full">
+    <div class="flex items-center gap-3">
+
+      <div class="w-12 h-12 rounded-full border-2 border-white overflow-hidden flex items-center justify-center bg-white shadow-md">
+        <img src="/image/my_avatar.png" alt="Haidar Avatar" class="w-full h-full object-cover" />
+      </div>
+      <div>
+        <h2 class="text-lg font-bold leading-tight">Hi, Im Haidar</h2>
+        <p class="text-sm text-white/80">Mobile Developer & Security Enthusiast</p>
+      </div>
+    </div>
+    
+ 
+    <div class="flex items-center gap-3">
+      <a href="https://www.linkedin.com/in/haidar-ahlan-ghaffar/" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition w-9 h-9 flex items-center justify-center">
+        <img src="/logo/linkedinnew.svg" alt="LinkedIn" class="w-5 h-5 invert" />
+      </a>
+      <a href="https://github.com/haidarahlan" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition w-9 h-9 flex items-center justify-center">
+        <img src="/logo/github.svg" alt="GitHub" class="w-5 h-5 invert" />
+      </a>
+    </div>
+  </div>
+
+  <div class="mt-8">
+    <h1 class="text-4xl md:text-5.5xl font-extrabold tracking-tight leading-tight mb-4">
+      I do code and <br/>build apps for it
+    </h1>
+    <p class="text-white/90 text-sm md:text-base leading-relaxed max-w-xl font-normal">
+      I'm a Mobile Developer with 2 years of experience creating Flutter apps. I specialize in frontend development and Bloc state management, building scalable solutions with attention to both user experience and code quality.
+    </p>
+  </div>
+</div>
