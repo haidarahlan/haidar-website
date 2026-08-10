@@ -1,5 +1,9 @@
 ---
 // src/components/ExperienceCard.astro
+import { Image } from 'astro:assets';
+import stevorLogo from '../assets/image/logo_stevor.webp';
+import warmingupLogo from '../assets/image/logo_warmingup.webp';
+import telkomLogo from '../assets/image/logo_telkom.png';
 ---
 
 <div class="bg-[#181528] border border-white/5 rounded-[2rem] p-8 flex flex-col justify-start text-white shadow-lg md:col-span-2 min-h-[340px]">
@@ -9,7 +13,7 @@
     <div class="flex items-start justify-between gap-4 border-b border-white/5 pb-4">
       <div class="flex items-start gap-3">
         <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center mt-0.5 overflow-hidden p-1 shrink-0">
-          <img src={import.meta.env.BASE_URL + "image/logo_stevor.webp"} alt="Stevor Express" class="w-full h-full object-contain" />
+          <Image src={stevorLogo} alt="Stevor Express" width={40} height={40} class="w-full h-full object-contain" />
         </div>
         <div>
           <h3 class="text-sm md:text-base font-semibold">Flutter Developer at Stevor Express</h3>
@@ -27,7 +31,7 @@
     <div class="flex items-start justify-between gap-4 border-b border-white/5 pb-4">
       <div class="flex items-start gap-3">
         <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center mt-0.5 overflow-hidden p-1 shrink-0">
-          <img src={import.meta.env.BASE_URL + "image/logo_warmingup.webp"} alt="WarminUP" class="w-full h-full object-contain" />
+          <Image src={warmingupLogo} alt="WarminUP" width={40} height={40} class="w-full h-full object-contain" />
         </div>
         <div>
           <h3 class="text-sm md:text-base font-semibold">Mobile Developer at WarminUP</h3>
@@ -45,7 +49,7 @@
     <div class="flex items-start justify-between gap-4">
       <div class="flex items-start gap-3">
         <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center mt-0.5 overflow-hidden p-1 shrink-0">
-          <img src={import.meta.env.BASE_URL + "image/logo_telkom.png"} alt="Telkom University" class="w-full h-full object-contain" />
+          <Image src={telkomLogo} alt="Telkom University" width={40} height={40} class="w-full h-full object-contain" />
         </div>
         <div>
           <h3 class="text-sm md:text-base font-semibold">Practicum Assistant at Telkom University</h3>

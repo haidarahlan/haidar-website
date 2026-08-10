@@ -1,5 +1,9 @@
 ---
 // src/components/ProjectsCard.astro
+import { Image } from 'astro:assets';
+import smartmindLogo from '../assets/logo/app_smartmind.svg';
+import stevorLogo from '../assets/logo/app_stevor.svg';
+import driverLogo from '../assets/logo/app_driver.svg';
 ---
 
 <div class="bg-gradient-to-br from-[#8b5cf6] to-[#ec4899] rounded-[2rem] p-8 flex flex-col items-center justify-start text-white shadow-lg min-h-[340px]">
@@ -8,21 +12,21 @@
   <div class="grid grid-cols-3 gap-6 w-full max-w-xs mx-auto">
     <a href="https://play.google.com/store/apps/details?id=com.saga.smartmind&hl=id" class="flex flex-col items-center gap-2 group">
       <div class="w-14 h-14 bg-white hover:bg-white/90 border border-white/20 rounded-2xl flex items-center justify-center p-2.5 transition duration-300 shadow-md group-hover:scale-105">
-        <img src={import.meta.env.BASE_URL + "logo/app_smartmind.svg"} alt="Smart Mind Center App" class="w-full h-full object-contain" />
+        <Image src={smartmindLogo} alt="Smart Mind Center App" width={56} height={56} class="w-full h-full object-contain" />
       </div>
       <span class="text-xs text-center text-white/90 leading-tight">Smart Mind Center App</span>
     </a>
 
     <a href="https://play.google.com/store/apps/details?id=com.stevor.express&hl=id" class="flex flex-col items-center gap-2 group">
       <div class="w-14 h-14 bg-white hover:bg-white/90 border border-white/20 rounded-2xl flex items-center justify-center p-2.5 transition duration-300 shadow-md group-hover:scale-105">
-        <img src={import.meta.env.BASE_URL + "logo/app_stevor.svg"} alt="Stevor Express" class="w-full h-full object-contain" />
+        <Image src={stevorLogo} alt="Stevor Express" width={56} height={56} class="w-full h-full object-contain" />
       </div>
       <span class="text-xs text-center text-white/90 leading-tight">Stevor Express</span>
     </a>
 
     <a href="https://play.google.com/store/apps/details?id=com.stevor.driver&hl=id" class="flex flex-col items-center gap-2 group">
       <div class="w-14 h-14 bg-white hover:bg-white/90 border border-white/20 rounded-2xl flex items-center justify-center p-2.5 transition duration-300 shadow-md group-hover:scale-105">
-        <img src={import.meta.env.BASE_URL + "logo/app_driver.svg"} alt="Stevor Driver" class="w-full h-full object-contain" />
+        <Image src={driverLogo} alt="Stevor Driver" width={56} height={56} class="w-full h-full object-contain" />
       </div>
       <span class="text-xs text-center text-white/90 leading-tight">Stevor Driver</span>
     </a>

@@ -1,12 +1,17 @@
 ---
 // src/components/HeroCard.astro
+import { Image } from 'astro:assets';
+import myAvatar from '../assets/image/my_avatar.webp';
+import linkedinLogo from '../assets/logo/linkedinnew.svg';
+import githubLogo from '../assets/logo/github.svg';
+import haidarBackground from '../assets/image/haidar-background.png';
 ---
 
 <div class="bg-gradient-to-br from-[#06b6d4] via-[#10b981] to-[#eab308] rounded-[2rem] p-8 md:p-10 flex flex-col justify-between text-white relative shadow-lg min-h-[340px] md:col-span-2 overflow-hidden">
   <div class="flex items-start justify-between w-full z-10">
     <div class="flex items-center gap-3">
       <div class="w-12 h-12 rounded-full border-2 border-white overflow-hidden flex items-center justify-center bg-white shadow-md">
-        <img src={import.meta.env.BASE_URL + "image/my_avatar.webp"} alt="Haidar Avatar" class="w-full h-full object-cover" />
+        <Image src={myAvatar} alt="Haidar Avatar" width={48} height={48} class="w-full h-full object-cover" />
       </div>
       <div>
         <h2 class="text-lg font-bold leading-tight">Hello, i'm Haidar</h2>
@@ -16,10 +21,10 @@
     
     <div class="flex items-center gap-3">
       <a href="https://www.linkedin.com/in/haidar-ahlan-ghaffar/" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition w-9 h-9 flex items-center justify-center">
-        <img src={import.meta.env.BASE_URL + "logo/linkedinnew.svg"} alt="LinkedIn" class="w-5 h-5" />
+        <Image src={linkedinLogo} alt="LinkedIn" width={20} height={20} class="w-5 h-5" />
       </a>
       <a href="https://github.com/haidarahlan" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition w-9 h-9 flex items-center justify-center">
-        <img src={import.meta.env.BASE_URL + "logo/github.svg"} alt="GitHub" class="w-5 h-5 invert" />
+        <Image src={githubLogo} alt="GitHub" width={20} height={20} class="w-5 h-5 invert" />
       </a>
     </div>
   </div>
@@ -37,7 +42,7 @@
     
 
     <div class="absolute bottom-0 right-4 md:right-10 w-64 md:w-80 flex items-end justify-center pointer-events-none">
-      <img src={import.meta.env.BASE_URL + "image/haidar-background.webp"} alt="Haidar Background" class="w-full h-auto object-contain" />
+      <Image src={haidarBackground} alt="Haidar Background" width={320} height={400} class="w-full h-auto object-contain" loading="eager" fetchpriority="high" />
     </div>
   </div>
 </div>

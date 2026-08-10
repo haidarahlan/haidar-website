@@ -6,6 +6,8 @@ import ProjectsCard from '../components/ProjectsCard.astro';
 import ExperienceCard from '../components/ExperienceCard.astro';
 import CertificatesCard from '../components/CertificatesCard.astro';
 import ContactCard from '../components/ContactCard.astro';
+import { Image } from 'astro:assets';
+import myAvatar from '../assets/image/my_avatar.webp';
 ---
 
 <Layout>
@@ -19,7 +21,7 @@ import ContactCard from '../components/ContactCard.astro';
 					<span class="moon-icon">🌙</span>
 				</label>
 				<div class="w-8 h-8 rounded-full bg-yellow-500 overflow-hidden flex items-center justify-center text-lg border border-white/20 shadow-inner">
-					<img src={import.meta.env.BASE_URL + "image/my_avatar.webp"} alt="">
+					<Image src={myAvatar} alt="Haidar Avatar" width={32} height={32} class="w-full h-full object-cover" />
 				</div>
 			</div>
 		</div>

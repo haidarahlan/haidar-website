@@ -1,4 +1,9 @@
 ---
+import { Image } from 'astro:assets';
+import fotoMusik from '../assets/image/foto_musik.png';
+import githubLogo from '../assets/logo/github.svg';
+import linkedinLogo from '../assets/logo/linkedinnew.svg';
+import instagramLogo from '../assets/logo/instagram.svg';
 ---
 
 <div class="bg-gradient-to-br from-[#10b981] via-[#06b6d4] to-[#3b82f6] rounded-[2rem] p-8 flex flex-col text-white shadow-lg min-h-[340px]">
@@ -30,7 +35,7 @@
       <div class="flex items-center justify-between w-full">
         <div class="flex items-center gap-3">
           <div class="w-6 h-6 flex items-center justify-center shrink-0 rounded-full overflow-hidden">
-            <img id="spotify-logo" src={import.meta.env.BASE_URL + "image/foto_musik.png"} alt="Spotify" class="w-full h-full object-cover" />
+            <Image id="spotify-logo" src={fotoMusik} alt="Spotify" width={24} height={24} class="w-full h-full object-cover" />
           </div>
           <div>
             <p class="text-[10px] text-white/60 uppercase tracking-wider font-semibold">Favorite Music</p>
@@ -69,15 +74,15 @@
     <p class="text-[10px] text-white/60 uppercase tracking-wider font-semibold mb-3">Connect with me</p>
     <div class="flex flex-wrap gap-2">
       <a href="https://github.com/haidarahlan" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-xl text-xs font-medium transition flex items-center gap-1.5">
-        <img src={import.meta.env.BASE_URL + "logo/github.svg"} alt="GitHub" class="w-4 h-4 invert" />
+        <Image src={githubLogo} alt="GitHub" width={16} height={16} class="w-4 h-4 invert" />
         GitHub
       </a>
       <a href="https://www.linkedin.com/in/haidar-ahlan-ghaffar/" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-xl text-xs font-medium transition flex items-center gap-1.5">
-        <img src={import.meta.env.BASE_URL + "logo/linkedinnew.svg"} alt="LinkedIn" class="w-4 h-4" />
+        <Image src={linkedinLogo} alt="LinkedIn" width={16} height={16} class="w-4 h-4" />
         LinkedIn
       </a>
       <a href="https://www.instagram.com/haidarahlanz/" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-xl text-xs font-medium transition flex items-center gap-1.5">
-        <img src={import.meta.env.BASE_URL + "logo/instagram.svg"} alt="Instagram" class="w-4 h-4" />
+        <Image src={instagramLogo} alt="Instagram" width={16} height={16} class="w-4 h-4" />
         Instagram
       </a>
     </div>
