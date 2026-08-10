@@ -30,7 +30,7 @@
       <div class="flex items-center justify-between w-full">
         <div class="flex items-center gap-3">
           <div class="w-6 h-6 flex items-center justify-center shrink-0 rounded-full overflow-hidden">
-            <img id="spotify-logo" src="/image/foto_musik.png" alt="Spotify" class="w-full h-full object-cover" />
+            <img id="spotify-logo" src={import.meta.env.BASE_URL + "image/foto_musik.png"} alt="Spotify" class="w-full h-full object-cover" />
           </div>
           <div>
             <p class="text-[10px] text-white/60 uppercase tracking-wider font-semibold">Favorite Music</p>
@@ -63,21 +63,21 @@
   </div>
 
   <!-- Audio Player Element -->
-  <audio id="music-player" src="/music/Disillusioned.mp3" preload="metadata"></audio>
+  <audio id="music-player" src={import.meta.env.BASE_URL + "music/Disillusioned.mp3"} preload="metadata"></audio>
 
   <div class="mt-6 pt-4 border-t border-white/10">
     <p class="text-[10px] text-white/60 uppercase tracking-wider font-semibold mb-3">Connect with me</p>
     <div class="flex flex-wrap gap-2">
       <a href="https://github.com/haidarahlan" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-xl text-xs font-medium transition flex items-center gap-1.5">
-        <img src="/logo/github.svg" alt="GitHub" class="w-4 h-4 invert" />
+        <img src={import.meta.env.BASE_URL + "logo/github.svg"} alt="GitHub" class="w-4 h-4 invert" />
         GitHub
       </a>
       <a href="https://www.linkedin.com/in/haidar-ahlan-ghaffar/" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-xl text-xs font-medium transition flex items-center gap-1.5">
-        <img src="/logo/linkedinnew.svg" alt="LinkedIn" class="w-4 h-4" />
+        <img src={import.meta.env.BASE_URL + "logo/linkedinnew.svg"} alt="LinkedIn" class="w-4 h-4" />
         LinkedIn
       </a>
       <a href="https://www.instagram.com/haidarahlanz/" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-xl text-xs font-medium transition flex items-center gap-1.5">
-        <img src="/logo/instagram.svg" alt="Instagram" class="w-4 h-4" />
+        <img src={import.meta.env.BASE_URL + "logo/instagram.svg"} alt="Instagram" class="w-4 h-4" />
         Instagram
       </a>
     </div>
