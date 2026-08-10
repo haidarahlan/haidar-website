@@ -9,4 +9,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: "https://haidar-ahlan.github.io",
+  base: "/haidar-website",
 });
