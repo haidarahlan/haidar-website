@@ -8,6 +8,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: "https://haidar-ahlan.github.io",
+  site: "https://haidarahlan.github.io",
   base: "/haidar-website",
 });
